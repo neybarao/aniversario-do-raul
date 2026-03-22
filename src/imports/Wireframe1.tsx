@@ -1,13 +1,13 @@
 import svgPaths from "./svg-n7i5dci08g";
-import imgBgBaby from "figma:asset/0cb98f0389972eec09fd28028c649adfa52c1b35.png";
-import imgGeminiGeneratedImage87B3S887B3S887B32 from "figma:asset/595abc1fe83a13ac64981590eded523d8d411154.png";
-import imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw42 from "figma:asset/bc0a55f1255d6cb2b566f5bf9501b14beacfaf7b.png";
-import imgAnimals from "figma:asset/5e2d2fee9265ed38d8004c53bdb7997f26102541.png";
-import imgRaul from "figma:asset/d617e6cc7383ba62177e2c2960b9dc74e64ce014.png";
-import imgGeminiGeneratedImage2C8Wmn2C8Wmn2C8W1 from "figma:asset/75a423dd8b10efef5741cca116d9fb1c61ba979d.png";
-import imgGeminiGeneratedImageV8Fz0Zv8Fz0Zv8Fz2 from "figma:asset/841ba1fed0e5d5f4cbfa8a4b604d94027ac3d583.png";
-import imgGeminiGeneratedImageYd5O1Yyd5O1Yyd5O1 from "figma:asset/cdd136902fe7009b720010cb6f5aabf10992dfa9.png";
-import imgGeminiGeneratedImageCny0Xccny0Xccny01 from "figma:asset/87ec5067754f523a89984371d863321a0c9a543f.png";
+import imgBgBaby from "figma:asset/0cb98f0389972eec09fd28028c649adfa52c1b35.webp";
+import imgGeminiGeneratedImage87B3S887B3S887B32 from "figma:asset/595abc1fe83a13ac64981590eded523d8d411154.webp";
+import imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw42 from "figma:asset/bc0a55f1255d6cb2b566f5bf9501b14beacfaf7b.webp";
+import imgAnimals from "figma:asset/5e2d2fee9265ed38d8004c53bdb7997f26102541.webp";
+import imgRaul from "figma:asset/d617e6cc7383ba62177e2c2960b9dc74e64ce014.webp";
+import imgGeminiGeneratedImage2C8Wmn2C8Wmn2C8W1 from "figma:asset/nova.webp";
+import imgGeminiGeneratedImageV8Fz0Zv8Fz0Zv8Fz2 from "figma:asset/841ba1fed0e5d5f4cbfa8a4b604d94027ac3d583.webp";
+import imgGeminiGeneratedImageYd5O1Yyd5O1Yyd5O1 from "figma:asset/cdd136902fe7009b720010cb6f5aabf10992dfa9.webp";
+import imgGeminiGeneratedImageCny0Xccny0Xccny01 from "figma:asset/87ec5067754f523a89984371d863321a0c9a543f.webp";
 import { imgGeminiGeneratedImage87B3S887B3S887B31, imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41 } from "./svg-r0xqs";
 
 function TreesLeft() {
@@ -238,7 +238,7 @@ function Frame6() {
   return (
     <div className="backdrop-blur-[10px] bg-[rgba(255,255,255,0.8)] content-stretch flex items-start p-[24px] relative rounded-[32px] shrink-0 w-[900px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
-      <p className="flex-[1_0_0] font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] min-h-px min-w-px relative text-[32px] text-black text-center">Com o coração transbordando de alegria, convidamos você para celebrar conosco o primeiro aninho do nosso Raul e o seu encontro com a luz através do batismo. Sua presença tornará este dia ainda mais abençoado e inesquecível.</p>
+      <p className="flex-[1_0_0] font-bold leading-[normal] min-h-px min-w-px relative text-[32px] text-black text-center">Com o coração transbordando de alegria, convidamos você para celebrar conosco o primeiro aninho do nosso Raul e o seu encontro com a luz através do batismo. Sua presença tornará este dia ainda mais abençoado e inesquecível.</p>
     </div>
   );
 }
@@ -246,7 +246,7 @@ function Frame6() {
 function Tag() {
   return (
     <div className="bg-[#273421] content-stretch flex items-center justify-center px-[16px] py-[8px] relative rounded-[16px] shrink-0" data-name="tag">
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">MATEUS 19:14</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">MATEUS 19:14</p>
     </div>
   );
 }
@@ -254,7 +254,7 @@ function Tag() {
 function Cite() {
   return (
     <div className="content-stretch flex flex-col gap-[22px] items-center relative shrink-0 w-[632px]" data-name="Cite">
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] min-w-full relative shrink-0 text-[#273421] text-[40px] text-center w-[min-content]">{`"Deixai vir a mim os pequeninos”`}</p>
+      <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#273421] text-[40px] text-center w-[min-content]">{`"Deixai vir a mim os pequeninos”`}</p>
       <Tag />
     </div>
   );
@@ -267,10 +267,10 @@ function Intro() {
         <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-[40px] py-[120px] relative w-full">
           <div className="absolute h-[359px] left-0 top-0 w-[384px]" data-name="Gemini_Generated_Image_2c8wmn2c8wmn2c8w 1">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[220.46%]" src={imgGeminiGeneratedImage2C8Wmn2C8Wmn2C8W1} />
+              <img alt="" className="absolute h-full left-0 max-w-none top-0 size-full object-cover" src={imgGeminiGeneratedImage2C8Wmn2C8Wmn2C8W1} />
             </div>
           </div>
-          <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#273421] text-[40px] text-center whitespace-nowrap">Uma celebração dupla e especial</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[40px] text-center whitespace-nowrap">Uma celebração dupla e especial</p>
           <Frame6 />
           <Cite />
         </div>
@@ -283,7 +283,7 @@ function Intro() {
 function Tag1() {
   return (
     <div className="bg-[#273421] content-stretch flex items-center justify-center px-[16px] py-[8px] relative rounded-[16px] shrink-0" data-name="tag">
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">8h00</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">8h00</p>
     </div>
   );
 }
@@ -304,7 +304,7 @@ function Frame4() {
   return (
     <div className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0">
       <Frame />
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Ver no mapa</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Ver no mapa</p>
     </div>
   );
 }
@@ -315,9 +315,9 @@ function Frame1() {
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex flex-col gap-[8px] items-start p-[24px] relative w-full">
           <Tag1 />
-          <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Batizado</p>
-          <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Capela São Domingos Sávio</p>
-          <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">R. Flamboiant, 277 - Cidade Jardim</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Batizado</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Capela São Domingos Sávio</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">R. Flamboiant, 277 - Cidade Jardim</p>
           <Frame4 />
         </div>
       </div>
@@ -329,7 +329,7 @@ function Frame1() {
 function Tag2() {
   return (
     <div className="bg-[#273421] content-stretch flex items-center justify-center px-[16px] py-[8px] relative rounded-[16px] shrink-0" data-name="tag">
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">9h30</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">9h30</p>
     </div>
   );
 }
@@ -350,7 +350,7 @@ function Frame5() {
   return (
     <div className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0">
       <Frame2 />
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Ver no mapa</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Ver no mapa</p>
     </div>
   );
 }
@@ -361,9 +361,9 @@ function Frame3() {
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex flex-col gap-[8px] items-start p-[24px] relative w-full">
           <Tag2 />
-          <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Festa</p>
-          <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Chácara Descanso do Guerreiro</p>
-          <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Av. Delfinópolis - Balneário atlântico</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Festa</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Chácara Descanso do Guerreiro</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[24px] text-black text-center whitespace-nowrap">Av. Delfinópolis - Balneário atlântico</p>
           <Frame5 />
         </div>
       </div>
@@ -386,7 +386,7 @@ function Intro1() {
     <div className="bg-[#f2eee5] relative shrink-0 w-full" data-name="Intro">
       <div className="flex flex-col items-center justify-center overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex flex-col gap-[40px] items-center justify-center px-[40px] py-[120px] relative w-full">
-          <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#273421] text-[40px] text-center whitespace-nowrap">Programação do Dia</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[40px] text-center whitespace-nowrap">Programação do Dia</p>
           <div className="absolute h-[322px] right-0 top-0 w-[431px]" data-name="Gemini_Generated_Image_v8fz0zv8fz0zv8fz 2">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
               <img alt="" className="absolute h-full left-[-76.29%] max-w-none top-0 w-[176.29%]" src={imgGeminiGeneratedImageV8Fz0Zv8Fz0Zv8Fz2} />
@@ -407,7 +407,7 @@ function Intro1() {
 function Frame7() {
   return (
     <div className="bg-[#273421] content-stretch flex items-center justify-center px-[16px] py-[8px] relative rounded-[16px] shrink-0">
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">Contagem Regressiva</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">Contagem Regressiva</p>
     </div>
   );
 }
@@ -416,8 +416,8 @@ function Frame8() {
   return (
     <div className="backdrop-blur-[10px] bg-[#f2eee5] content-stretch flex flex-col h-[231px] items-center justify-center pb-[40px] pt-[24px] px-[40px] relative rounded-[32px] shrink-0 w-[240px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#273421] text-[128px] text-center whitespace-nowrap">20</p>
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#827500] text-[20px] text-center uppercase whitespace-nowrap">Dias</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[128px] text-center whitespace-nowrap">20</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#827500] text-[20px] text-center uppercase whitespace-nowrap">Dias</p>
     </div>
   );
 }
@@ -426,8 +426,8 @@ function Frame9() {
   return (
     <div className="backdrop-blur-[10px] bg-[#f2eee5] content-stretch flex flex-col h-[231px] items-center justify-center pb-[40px] pt-[24px] px-[40px] relative rounded-[32px] shrink-0 w-[240px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#273421] text-[128px] text-center whitespace-nowrap">18</p>
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#827500] text-[20px] text-center uppercase whitespace-nowrap">Horas</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[128px] text-center whitespace-nowrap">18</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#827500] text-[20px] text-center uppercase whitespace-nowrap">Horas</p>
     </div>
   );
 }
@@ -436,8 +436,8 @@ function Frame10() {
   return (
     <div className="backdrop-blur-[10px] bg-[#f2eee5] content-stretch flex flex-col h-[231px] items-center justify-center pb-[40px] pt-[24px] px-[40px] relative rounded-[32px] shrink-0 w-[240px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#273421] text-[128px] text-center whitespace-nowrap">03</p>
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#827500] text-[20px] text-right uppercase whitespace-nowrap">Minutos</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[128px] text-center whitespace-nowrap">03</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#827500] text-[20px] text-right uppercase whitespace-nowrap">Minutos</p>
     </div>
   );
 }
@@ -446,8 +446,8 @@ function Frame12() {
   return (
     <div className="backdrop-blur-[10px] bg-[#f2eee5] content-stretch flex flex-col h-[231px] items-center justify-center pb-[40px] pt-[24px] px-[40px] relative rounded-[32px] shrink-0 w-[240px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#273421] text-[128px] text-center whitespace-nowrap">32</p>
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#827500] text-[20px] uppercase whitespace-nowrap">Segundos</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[128px] text-center whitespace-nowrap">32</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#827500] text-[20px] uppercase whitespace-nowrap">Segundos</p>
     </div>
   );
 }
@@ -497,12 +497,12 @@ function Frame13() {
   );
 }
 
-function Date() {
+function DateSection() {
   return (
     <div className="-translate-x-1/2 absolute bg-[#d7cd76] content-stretch flex gap-[24px] items-center justify-center left-1/2 px-[32px] py-[16px] rounded-[24px] top-[1051px]" data-name="Date">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[24px]" />
       <Frame13 />
-      <p className="font-['Quicksand:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#1f2a1c] text-[40px] text-center whitespace-nowrap">12 de Abril, 2026</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#1f2a1c] text-[40px] text-center whitespace-nowrap">12 de Abril, 2026</p>
     </div>
   );
 }
@@ -514,7 +514,7 @@ export default function Wireframe() {
       <Intro />
       <Intro1 />
       <Intro2 />
-      <Date />
+      <DateSection />
     </div>
   );
 }
