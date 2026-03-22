@@ -1,5 +1,5 @@
-import Desktop from '../imports/Desktop-11-388';
-import Mobile from '../imports/Mobile-11-618';
+import Desktop from '../imports/Desktop';
+import Mobile from '../imports/Mobile';
 
 export default function App() {
   return (

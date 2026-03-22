@@ -1,3 +1,5 @@
+import React, { useRef, useState, useEffect } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import svgPaths from "./svg-9tneks1yzf";
 import imgBgBaby from "figma:asset/0cb98f0389972eec09fd28028c649adfa52c1b35.webp";
 import imgGeminiGeneratedImage87B3S887B3S887B32 from "figma:asset/595abc1fe83a13ac64981590eded523d8d411154.webp";
@@ -208,30 +210,57 @@ function Banner() {
 }
 
 function Hero() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  const yBackground = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const yTrees = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const yAnimals = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const yRaul = useTransform(scrollYProgress, [0, 1], ["0%", "5%"]);
+
   return (
-    <div className="h-[762px] overflow-clip relative shrink-0 w-full" data-name="Hero">
-      <div className="-translate-x-1/2 absolute bottom-[-139px] h-[732px] left-[calc(50%+1px)] w-[1786px]" data-name="bg-baby">
+    <div ref={ref} className="h-[762px] overflow-clip relative shrink-0 w-full" data-name="Hero">
+      <motion.div style={{ y: yBackground }} className="-translate-x-1/2 absolute bottom-[-139px] h-[732px] left-[calc(50%+1px)] w-[1786px]" data-name="bg-baby">
         <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 overflow-hidden">
             <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgBgBaby} />
           </div>
           <div className="absolute bg-gradient-to-b from-[#fbf7ed] inset-0 to-[12.418%] to-[rgba(251,247,237,0)]" />
         </div>
-      </div>
-      <TreesLeft />
-      <TreesRight />
-      <div className="-translate-x-1/2 absolute bottom-0 h-[303px] left-[calc(50%-0.5px)] w-[1487px]" data-name="animals">
+      </motion.div>
+      <motion.div style={{ y: yTrees }}>
+        <TreesLeft />
+        <TreesRight />
+      </motion.div>
+      <motion.div style={{ y: yAnimals }} className="-translate-x-1/2 absolute bottom-0 h-[303px] left-[calc(50%-0.5px)] w-[1487px]" data-name="animals">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgAnimals} />
         </div>
-      </div>
+      </motion.div>
       <Banner />
-      <div className="-translate-x-1/2 absolute h-[111.827px] left-1/2 top-[62.42px] w-[244px]" data-name="Raul">
+      <motion.div style={{ y: yRaul }} className="-translate-x-1/2 absolute h-[111.827px] left-1/2 top-[62.42px] w-[244px]" data-name="Raul">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img alt="" className="absolute h-[203.98%] left-[-42.54%] max-w-none top-[-65.6%] w-[171.39%]" src={imgRaul} />
         </div>
-      </div>
+      </motion.div>
     </div>
+  );
+}
+
+function FadeInWhenInView({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="w-full flex flex-col items-center"
+    >
+      {children}
+    </motion.div>
   );
 }
 
@@ -305,10 +334,15 @@ function Frame() {
 
 function Frame4() {
   return (
-    <div className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0">
+    <a 
+      href="https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0 hover:bg-[#b0a75a] transition-colors cursor-pointer no-underline"
+    >
       <Frame />
       <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[24px] text-center whitespace-nowrap">Ver no Mapa</p>
-    </div>
+    </a>
   );
 }
 
@@ -351,10 +385,15 @@ function Frame2() {
 
 function Frame5() {
   return (
-    <div className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0">
+    <a 
+      href="https://maps.app.goo.gl/t5aE8XSPXP1SyHc28" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0 hover:bg-[#b0a75a] transition-colors cursor-pointer no-underline"
+    >
       <Frame2 />
       <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[24px] text-center whitespace-nowrap">Ver no Mapa</p>
-    </div>
+    </a>
   );
 }
 
@@ -415,42 +454,56 @@ function Frame7() {
   );
 }
 
-function Frame8() {
+function Frame8({ value }: { value: number }) {
   return (
     <div className="backdrop-blur-[10px] bg-[#f2eee5] flex-[1_0_0] min-h-px min-w-px relative rounded-[32px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
       <div className="flex flex-col items-center justify-center size-full">
         <div className="content-stretch flex flex-col font-bold items-center justify-center leading-[normal] pb-[32px] pt-[24px] px-[8px] relative text-center w-full whitespace-nowrap">
-          <p className="relative shrink-0 text-[#273421] text-[56px]">20</p>
-          <p className="relative shrink-0 text-[#827500] text-[16px] uppercase">Dias</p>
+          <p className="relative shrink-0 text-[#273421] text-[40px]">{String(value).padStart(2, '0')}</p>
+          <p className="relative shrink-0 text-[#827500] text-[12px] uppercase">Dias</p>
         </div>
       </div>
     </div>
   );
 }
 
-function Frame9() {
+function Frame9({ value }: { value: number }) {
   return (
     <div className="backdrop-blur-[10px] bg-[#f2eee5] flex-[1_0_0] min-h-px min-w-px relative rounded-[32px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
       <div className="flex flex-col items-center justify-center size-full">
         <div className="content-stretch flex flex-col font-bold items-center justify-center leading-[normal] pb-[32px] pt-[24px] px-[8px] relative text-center w-full whitespace-nowrap">
-          <p className="relative shrink-0 text-[#273421] text-[56px]">18</p>
-          <p className="relative shrink-0 text-[#827500] text-[16px] uppercase">Horas</p>
+          <p className="relative shrink-0 text-[#273421] text-[40px]">{String(value).padStart(2, '0')}</p>
+          <p className="relative shrink-0 text-[#827500] text-[12px] uppercase">Horas</p>
         </div>
       </div>
     </div>
   );
 }
 
-function Frame10() {
+function Frame10({ value }: { value: number }) {
   return (
     <div className="backdrop-blur-[10px] bg-[#f2eee5] flex-[1_0_0] min-h-px min-w-px relative rounded-[32px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
       <div className="flex flex-col items-center justify-center size-full">
         <div className="content-stretch flex flex-col font-bold items-center justify-center leading-[normal] pb-[32px] pt-[24px] px-[8px] relative w-full whitespace-nowrap">
-          <p className="relative shrink-0 text-[#273421] text-[56px] text-center">03</p>
-          <p className="relative shrink-0 text-[#827500] text-[16px] text-right uppercase">Minutos</p>
+          <p className="relative shrink-0 text-[#273421] text-[40px] text-center">{String(value).padStart(2, '0')}</p>
+          <p className="relative shrink-0 text-[#827500] text-[12px] text-center uppercase">Mins</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FrameSegs({ value }: { value: number }) {
+  return (
+    <div className="backdrop-blur-[10px] bg-[#f2eee5] flex-[1_0_0] min-h-px min-w-px relative rounded-[32px]">
+      <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
+      <div className="flex flex-col items-center justify-center size-full">
+        <div className="content-stretch flex flex-col font-bold items-center justify-center leading-[normal] pb-[32px] pt-[24px] px-[8px] relative w-full whitespace-nowrap">
+          <p className="relative shrink-0 text-[#273421] text-[40px] text-center">{String(value).padStart(2, '0')}</p>
+          <p className="relative shrink-0 text-[#827500] text-[12px] text-center uppercase">Segs</p>
         </div>
       </div>
     </div>
@@ -458,22 +511,94 @@ function Frame10() {
 }
 
 function Frame11() {
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  useEffect(() => {
+    const targetDate = new Date("2026-04-12T00:00:00").getTime();
+
+    const calculateTimeLeft = () => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+        });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <div className="content-stretch flex gap-[16px] items-center justify-center relative shrink-0 w-[314px]">
-      <Frame8 />
-      <Frame9 />
-      <Frame10 />
+    <div className="content-stretch flex gap-[8px] items-center justify-center relative shrink-0 w-full">
+      <Frame8 value={timeLeft.days} />
+      <Frame9 value={timeLeft.hours} />
+      <Frame10 value={timeLeft.minutes} />
+      <FrameSegs value={timeLeft.seconds} />
     </div>
   );
 }
 
 function Intro2() {
+  const handleAddToCalendar = () => {
+    const icsData = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//Aniversario do Raul//EN",
+      "CALSCALE:GREGORIAN",
+      "BEGIN:VEVENT",
+      "UID:batizado-raul-2026",
+      "DTSTAMP:20260322T230000Z",
+      "DTSTART:20260412T120000Z",
+      "DTEND:20260412T140000Z",
+      "SUMMARY:Batizado do Raul",
+      "DESCRIPTION:∙ Capela São Domingos Sávio: https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA\\n∙ Chácara Descanso do Guerreiro: https://maps.app.goo.gl/t5aE8XSPXP1SyHc28",
+      "LOCATION:Capela São Domingos Sávio",
+      "END:VEVENT",
+      "BEGIN:VEVENT",
+      "UID:festa-raul-2026",
+      "DTSTAMP:20260322T230000Z",
+      "DTSTART:20260412T140000Z",
+      "DTEND:20260413T020000Z",
+      "SUMMARY:Aniversário do Raul - 1 Aninho",
+      "DESCRIPTION:∙ Capela São Domingos Sávio: https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA\\n∙ Chácara Descanso do Guerreiro: https://maps.app.goo.gl/t5aE8XSPXP1SyHc28",
+      "LOCATION:Chácara Descanso do Guerreiro",
+      "END:VEVENT",
+      "END:VCALENDAR"
+    ].join("\r\n");
+
+    const blob = new Blob([icsData], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", "Aniversario_do_Raul.ics");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="bg-[#c6ab96] relative shrink-0 w-full" data-name="Intro">
       <div className="flex flex-col items-center justify-center overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex flex-col gap-[40px] items-center justify-center pb-[240px] pt-[80px] px-[40px] relative w-full">
           <Frame7 />
           <Frame11 />
+          <button 
+            onClick={handleAddToCalendar}
+            className="z-10 bg-[#f5ac57] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0 hover:bg-[#e69b46] transition-colors cursor-pointer border-none shadow-lg"
+          >
+            <FrameCalendarIcon />
+            <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[20px] text-center whitespace-nowrap">Adicione à agenda</p>
+          </button>
           <div className="absolute bottom-[-25px] flex h-[233px] items-center justify-center right-[-42px] w-[238px]">
             <div className="-scale-y-100 flex-none rotate-180">
               <div className="h-[233px] relative w-[238px]" data-name="Gemini_Generated_Image_cny0xccny0xccny0 1">
@@ -490,6 +615,18 @@ function Intro2() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function FrameCalendarIcon() {
+  return (
+    <div className="relative shrink-0 size-[24px]" data-name="Frame">
+      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g id="Frame">
+          <path d={svgPaths.p28fb4080} fill="var(--fill-0, #1F1F1F)" id="Vector" />
+        </g>
+      </svg>
     </div>
   );
 }
@@ -520,10 +657,18 @@ export default function Mobile() {
   return (
     <div className="bg-[#fbf7ed] content-stretch flex flex-col items-center relative size-full" data-name="Mobile">
       <Hero />
-      <Intro />
-      <Intro1 />
-      <Intro2 />
-      <DateSection />
+      <FadeInWhenInView>
+        <Intro />
+      </FadeInWhenInView>
+      <FadeInWhenInView>
+        <Intro1 />
+      </FadeInWhenInView>
+      <FadeInWhenInView>
+        <Intro2 />
+      </FadeInWhenInView>
+      <FadeInWhenInView>
+        <DateSection />
+      </FadeInWhenInView>
     </div>
   );
 }
