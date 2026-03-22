@@ -16,7 +16,20 @@ import { imgGeminiGeneratedImage87B3S887B3S887B31, imgGeminiGeneratedImage2Lw4Iv
 function TreesLeft() {
   return (
     <div className="-translate-x-1/2 absolute bottom-[37.83px] contents left-[calc(50%-12px)]" data-name="trees-left">
-      <div className="-translate-x-1/2 absolute bottom-[37.83px] h-[477.17px] left-[calc(50%-12px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[700px_477.17px] w-[700px]" data-name="Gemini_Generated_Image_87b3s887b3s887b3 1" style={{ maskImage: `url('${imgGeminiGeneratedImage87B3S887B3S887B31}')` }}>
+      <div 
+        className="-translate-x-1/2 absolute bottom-[37.83px] h-[477.17px] left-[calc(50%-12px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[700px_477.17px] w-[700px]" 
+        data-name="Gemini_Generated_Image_87b3s887b3s887b3 1" 
+        style={{ 
+          maskImage: `url('${imgGeminiGeneratedImage87B3S887B3S887B31}')`,
+          WebkitMaskImage: `url('${imgGeminiGeneratedImage87B3S887B3S887B31}')`,
+          maskSize: "700px 477.17px",
+          WebkitMaskSize: "700px 477.17px",
+          maskRepeat: "no-repeat",
+          WebkitMaskRepeat: "no-repeat",
+          maskPosition: "0px 0px",
+          WebkitMaskPosition: "0px 0px"
+        }}
+      >
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGeminiGeneratedImage87B3S887B3S887B32} />
       </div>
     </div>
@@ -26,7 +39,20 @@ function TreesLeft() {
 function TreesRight() {
   return (
     <div className="absolute bottom-[-0.74px] contents right-[-186px]" data-name="trees-right">
-      <div className="absolute bottom-[-0.74px] h-[593.736px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[871px_593.736px] right-[-186px] w-[871px]" data-name="Gemini_Generated_Image_2lw4iv2lw4iv2lw4 1" style={{ maskImage: `url('${imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41}')` }}>
+      <div 
+        className="absolute bottom-[-0.74px] h-[593.736px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[871px_593.736px] right-[-186px] w-[871px]" 
+        data-name="Gemini_Generated_Image_2lw4iv2lw4iv2lw4 1" 
+        style={{ 
+          maskImage: `url('${imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41}')`,
+          WebkitMaskImage: `url('${imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41}')`,
+          maskSize: "871px 593.736px",
+          WebkitMaskSize: "871px 593.736px",
+          maskRepeat: "no-repeat",
+          WebkitMaskRepeat: "no-repeat",
+          maskPosition: "0px 0px",
+          WebkitMaskPosition: "0px 0px"
+        }}
+      >
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw42} />
       </div>
     </div>
@@ -216,10 +242,10 @@ function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const yBackground = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const yTrees = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const yAnimals = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
-  const yRaul = useTransform(scrollYProgress, [0, 1], ["0%", "5%"]);
+  const yBackground = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const yTrees = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const yAnimals = useTransform(scrollYProgress, [0, 1], ["0%", "5%"]);
+  const yRaul = useTransform(scrollYProgress, [0, 1], ["0%", "2%"]);
 
   return (
     <div ref={ref} className="h-[762px] overflow-clip relative shrink-0 w-full" data-name="Hero">
@@ -231,7 +257,7 @@ function Hero() {
           <div className="absolute bg-gradient-to-b from-[#fbf7ed] inset-0 to-[12.418%] to-[rgba(251,247,237,0)]" />
         </div>
       </motion.div>
-      <motion.div style={{ y: yTrees }}>
+      <motion.div style={{ y: yTrees }} className="absolute inset-0 pointer-events-none">
         <TreesLeft />
         <TreesRight />
       </motion.div>
@@ -353,8 +379,8 @@ function Frame1() {
         <div className="content-stretch flex flex-col gap-[16px] items-start p-[24px] relative w-full">
           <Tag1 />
           <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Batizado</p>
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px] w-[min-content]">Capela São Domingos Sávio</p>
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px] w-[min-content]">R. Flamboiant, 277 - Cidade Jardim</p>
+          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px]">Capela São Domingos Sávio</p>
+          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px]">R. Flamboiant, 277 - Cidade Jardim</p>
           <Frame4 />
         </div>
       </div>
@@ -404,8 +430,8 @@ function Frame3() {
         <div className="content-stretch flex flex-col gap-[16px] items-start p-[24px] relative w-full">
           <Tag2 />
           <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Festa</p>
-          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[24px] text-center whitespace-nowrap">Chácara Descanso do Guerreiro</p>
-          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[24px] text-center whitespace-nowrap">Av. Delfinópolis - Balneário atlântico</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[24px]">Chácara Descanso do Guerreiro</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[24px]">Av. Delfinópolis - Balneário atlântico</p>
           <Frame5 />
         </div>
       </div>
@@ -621,8 +647,8 @@ function Intro2() {
 
 function FrameCalendarIcon() {
   return (
-    <div className="relative shrink-0 size-[24px]" data-name="Frame">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+    <div className="relative shrink-0 size-[32px]" data-name="Frame">
+      <svg className="absolute block size-full" fill="none" viewBox="0 0 32 32">
         <g id="Frame">
           <path d={svgPaths.p28fb4080} fill="var(--fill-0, #1F1F1F)" id="Vector" />
         </g>

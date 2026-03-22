@@ -16,7 +16,20 @@ import { imgGeminiGeneratedImage87B3S887B3S887B31, imgGeminiGeneratedImage2Lw4Iv
 function TreesLeft() {
   return (
     <div className="-translate-x-1/2 absolute bottom-[-64px] contents left-[calc(50%-251.5px)]" data-name="trees-left">
-      <div className="-translate-x-1/2 absolute bottom-[-64px] h-[903.216px] left-[calc(50%-251.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1325px_903.216px] w-[1325px]" data-name="Gemini_Generated_Image_87b3s887b3s887b3 1" style={{ maskImage: `url('${imgGeminiGeneratedImage87B3S887B3S887B31}')` }}>
+      <div 
+        className="-translate-x-1/2 absolute bottom-[-64px] h-[903.216px] left-[calc(50%-251.5px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1325px_903.216px] w-[1325px]" 
+        data-name="Gemini_Generated_Image_87b3s887b3s887b3 1" 
+        style={{ 
+          maskImage: `url('${imgGeminiGeneratedImage87B3S887B3S887B31}')`,
+          WebkitMaskImage: `url('${imgGeminiGeneratedImage87B3S887B3S887B31}')`,
+          maskSize: "1325px 903.216px",
+          WebkitMaskSize: "1325px 903.216px",
+          maskRepeat: "no-repeat",
+          WebkitMaskRepeat: "no-repeat",
+          maskPosition: "0px 0px",
+          WebkitMaskPosition: "0px 0px"
+        }}
+      >
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGeminiGeneratedImage87B3S887B3S887B32} />
       </div>
     </div>
@@ -26,7 +39,20 @@ function TreesLeft() {
 function TreesRight() {
   return (
     <div className="absolute bottom-[-63.85px] contents right-[-186px]" data-name="trees-right">
-      <div className="absolute bottom-[-63.85px] h-[916.849px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1345px_916.849px] right-[-186px] w-[1345px]" data-name="Gemini_Generated_Image_2lw4iv2lw4iv2lw4 1" style={{ maskImage: `url('${imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41}')` }}>
+      <div 
+        className="absolute bottom-[-63.85px] h-[916.849px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[1345px_916.849px] right-[-186px] w-[1345px]" 
+        data-name="Gemini_Generated_Image_2lw4iv2lw4iv2lw4 1" 
+        style={{ 
+          maskImage: `url('${imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41}')`,
+          WebkitMaskImage: `url('${imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41}')`,
+          maskSize: "1345px 916.849px",
+          WebkitMaskSize: "1345px 916.849px",
+          maskRepeat: "no-repeat",
+          WebkitMaskRepeat: "no-repeat",
+          maskPosition: "0px 0px",
+          WebkitMaskPosition: "0px 0px"
+        }}
+      >
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw42} />
       </div>
     </div>
@@ -216,10 +242,10 @@ function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const yBackground = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
-  const yTrees = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const yAnimals = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
-  const yRaul = useTransform(scrollYProgress, [0, 1], ["0%", "5%"]);
+  const yBackground = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const yTrees = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const yAnimals = useTransform(scrollYProgress, [0, 1], ["0%", "5%"]);
+  const yRaul = useTransform(scrollYProgress, [0, 1], ["0%", "2%"]);
 
   return (
     <div ref={ref} className="h-[986px] overflow-clip relative shrink-0 w-full" data-name="Hero">
@@ -231,7 +257,7 @@ function Hero() {
           <div className="absolute bg-gradient-to-b from-[#fbf7ed] inset-0 to-[12.418%] to-[rgba(251,247,237,0)]" />
         </div>
       </motion.div>
-      <motion.div style={{ y: yTrees }}>
+      <motion.div style={{ y: yTrees }} className="absolute inset-0 pointer-events-none">
         <TreesLeft />
         <TreesRight />
       </motion.div>
@@ -350,9 +376,9 @@ function Frame1() {
       <div className="flex flex-col items-center justify-center overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex flex-col gap-[16px] items-center justify-center p-[24px] relative w-full">
           <Tag1 />
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#273421] text-[32px] text-center w-[min-content]">Batizado</p>
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px] text-center w-[min-content]">Capela São Domingos Sávio</p>
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px] text-center w-[min-content]">R. Flamboiant, 277 - Cidade Jardim</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[48px] text-center">Batizado</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[32px] text-center">Capela São Domingos Sávio</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[32px] text-center">R. Flamboiant, 277 - Cidade Jardim</p>
           <Frame4 />
         </div>
       </div>
@@ -401,9 +427,9 @@ function Frame3() {
       <div className="flex flex-col items-center justify-center overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex flex-col gap-[16px] items-center justify-center p-[24px] relative w-full">
           <Tag2 />
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#273421] text-[32px] text-center w-[min-content]">Festa</p>
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px] text-center w-[min-content]">Chácara Descanso do Guerreiro</p>
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px] text-center w-[min-content]">Av. Delfinópolis - Balneário atlântico</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[48px] text-center">Festa</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[32px] text-center">Chácara Descanso do Guerreiro</p>
+          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[32px] text-center">Av. Delfinópolis - Balneário atlântico</p>
           <Frame5 />
         </div>
       </div>
@@ -604,7 +630,7 @@ function Intro2() {
 function Frame14() {
   return (
     <div className="relative shrink-0 size-[24px]" data-name="Frame">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+      <svg className="absolute block size-full" fill="none" viewBox="0 0 40 40">
         <g id="Frame">
           <path d={svgPaths.p28042b80} fill="var(--fill-0, #1F1F1F)" id="Vector" />
         </g>
