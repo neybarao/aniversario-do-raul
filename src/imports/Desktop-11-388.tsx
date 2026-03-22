@@ -269,7 +269,7 @@ function Frame6() {
   return (
     <div className="backdrop-blur-[10px] bg-[rgba(255,255,255,0.8)] content-stretch flex items-start p-[24px] relative rounded-[32px] shrink-0 w-[900px]">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
-      <p className="flex-[1_0_0] font-bold leading-[normal] min-h-px min-w-px relative text-[#386f1e] text-[24px] text-center">Com o coração transbordando de alegria, convidamos você para celebrar conosco o primeiro aninho do nosso Raul e o seu encontro com a luz através do batismo. Sua presença tornará este dia ainda mais abençoado e inesquecível.</p>
+      <p className="flex-[1_0_0] font-bold leading-[normal] min-h-px min-w-px relative text-[#386f1e] text-[24px] text-center">Com o coração transbordando de alegria, convidamos você para celebrar conosco o primeiro aninho do nosso Raul, e o seu encontro com a luz por meio do Batismo. Sua presença tornará esse dia ainda mais abençoado e inesquecível.</p>
     </div>
   );
 }

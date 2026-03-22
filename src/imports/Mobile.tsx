@@ -16,10 +16,10 @@ import { imgGeminiGeneratedImage87B3S887B3S887B31, imgGeminiGeneratedImage2Lw4Iv
 function TreesLeft() {
   return (
     <div className="-translate-x-1/2 absolute bottom-[37.83px] contents left-[calc(50%-12px)]" data-name="trees-left">
-      <div 
-        className="-translate-x-1/2 absolute bottom-[37.83px] h-[477.17px] left-[calc(50%-12px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[700px_477.17px] w-[700px]" 
-        data-name="Gemini_Generated_Image_87b3s887b3s887b3 1" 
-        style={{ 
+      <div
+        className="-translate-x-1/2 absolute bottom-[37.83px] h-[477.17px] left-[calc(50%-12px)] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[700px_477.17px] w-[700px]"
+        data-name="Gemini_Generated_Image_87b3s887b3s887b3 1"
+        style={{
           maskImage: `url('${imgGeminiGeneratedImage87B3S887B3S887B31}')`,
           WebkitMaskImage: `url('${imgGeminiGeneratedImage87B3S887B3S887B31}')`,
           maskSize: "700px 477.17px",
@@ -39,10 +39,10 @@ function TreesLeft() {
 function TreesRight() {
   return (
     <div className="absolute bottom-[-0.74px] contents right-[-186px]" data-name="trees-right">
-      <div 
-        className="absolute bottom-[-0.74px] h-[593.736px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[871px_593.736px] right-[-186px] w-[871px]" 
-        data-name="Gemini_Generated_Image_2lw4iv2lw4iv2lw4 1" 
-        style={{ 
+      <div
+        className="absolute bottom-[-0.74px] h-[593.736px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0px] mask-size-[871px_593.736px] right-[-186px] w-[871px]"
+        data-name="Gemini_Generated_Image_2lw4iv2lw4iv2lw4 1"
+        style={{
           maskImage: `url('${imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41}')`,
           WebkitMaskImage: `url('${imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41}')`,
           maskSize: "871px 593.736px",
@@ -295,7 +295,7 @@ function Frame6() {
     <div className="backdrop-blur-[10px] bg-[rgba(255,255,255,0.8)] relative rounded-[32px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
       <div className="content-stretch flex items-start p-[24px] relative w-full">
-        <p className="flex-[1_0_0] font-bold leading-[normal] min-h-px min-w-px relative text-[#386f1e] text-[18px] text-center">Com o coração transbordando de alegria, convidamos você para celebrar conosco o primeiro aninho do nosso Raul e o seu encontro com a luz através do batismo. Sua presença tornará este dia ainda mais abençoado e inesquecível.</p>
+        <p className="flex-[1_0_0] font-bold leading-[normal] min-h-px min-w-px relative text-[#386f1e] text-[18px] text-center">Com o coração transbordando de alegria, convidamos você para celebrar conosco o primeiro aninho do nosso Raul, e o seu encontro com a luz por meio do Batismo. Sua presença tornará esse dia ainda mais abençoado e inesquecível.</p>
       </div>
     </div>
   );
@@ -360,9 +360,9 @@ function Frame() {
 
 function Frame4() {
   return (
-    <a 
-      href="https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA" 
-      target="_blank" 
+    <a
+      href="https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA"
+      target="_blank"
       rel="noopener noreferrer"
       className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0 hover:bg-[#b0a75a] transition-colors cursor-pointer no-underline"
     >
@@ -411,9 +411,9 @@ function Frame2() {
 
 function Frame5() {
   return (
-    <a 
-      href="https://maps.app.goo.gl/t5aE8XSPXP1SyHc28" 
-      target="_blank" 
+    <a
+      href="https://maps.app.goo.gl/t5aE8XSPXP1SyHc28"
+      target="_blank"
       rel="noopener noreferrer"
       className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0 hover:bg-[#b0a75a] transition-colors cursor-pointer no-underline"
     >
@@ -618,7 +618,7 @@ function Intro2() {
         <div className="content-stretch flex flex-col gap-[40px] items-center justify-center pb-[240px] pt-[80px] px-[40px] relative w-full">
           <Frame7 />
           <Frame11 />
-          <button 
+          <button
             onClick={handleAddToCalendar}
             className="z-10 bg-[#f5ac57] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0 hover:bg-[#e69b46] transition-colors cursor-pointer border-none shadow-lg"
           >
