@@ -12,6 +12,8 @@ import imgGeminiGeneratedImageYd5O1Yyd5O1Yyd5O1 from "figma:asset/cdd136902fe700
 import imgGeminiGeneratedImageCny0Xccny0Xccny01 from "figma:asset/87ec5067754f523a89984371d863321a0c9a543f.webp";
 import imgGeminiGeneratedImageJ1Bqwtj1Bqwtj1Bq1 from "figma:asset/1481d0692724a65446fa2e67a52294d8872ee697.webp";
 import { imgGeminiGeneratedImage87B3S887B3S887B31, imgGeminiGeneratedImage2Lw4Iv2Lw4Iv2Lw41 } from "./svg-xs03s";
+import imgIgreja from "../assets/igreja.png";
+import imgCasa from "../assets/casa.png";
 
 function TreesLeft() {
   return (
@@ -374,15 +376,16 @@ function Frame4() {
 
 function Frame1() {
   return (
-    <div className="backdrop-blur-[10px] bg-[rgba(251,247,237,0.8)] relative rounded-[32px] shrink-0 w-full">
-      <div className="overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex flex-col gap-[16px] items-start p-[24px] relative w-full">
-          <Tag1 />
-          <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Batizado</p>
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px]">Capela São Domingos Sávio</p>
-          <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px]">R. Flamboiant, 277 - Cidade Jardim</p>
-          <Frame4 />
-        </div>
+    <div className="backdrop-blur-[10px] bg-[rgba(251,247,237,0.8)] relative rounded-[32px] shrink-0 w-full overflow-hidden shadow-lg">
+      <div className="h-[200px] w-full overflow-hidden">
+        <img src={imgIgreja} alt="Capela São Domingos Sávio" className="w-full h-full object-cover" />
+      </div>
+      <div className="content-stretch flex flex-col gap-[16px] items-start p-[24px] relative w-full">
+        <Tag1 />
+        <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Batizado</p>
+        <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[24px]">Capela São Domingos Sávio</p>
+        <p className="font-bold leading-[normal] min-w-full relative shrink-0 text-[#386f1e] text-[18px]">R. Flamboiant, 277 - Cidade Jardim</p>
+        <Frame4 />
       </div>
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
     </div>
@@ -392,7 +395,7 @@ function Frame1() {
 function Tag2() {
   return (
     <div className="bg-[#273421] content-stretch flex items-center justify-center px-[16px] py-[8px] relative rounded-[16px] shrink-0" data-name="tag">
-      <p className="font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">10h00</p>
+      <p className="font-bold leading-[normal] relative shrink-0 text-[#a9e98b] text-[20px] text-center whitespace-nowrap">11h00</p>
     </div>
   );
 }
@@ -412,7 +415,7 @@ function Frame2() {
 function Frame5() {
   return (
     <a
-      href="https://maps.app.goo.gl/t5aE8XSPXP1SyHc28"
+      href="https://maps.app.goo.gl/cwQKxWHmwTjTGvcn7"
       target="_blank"
       rel="noopener noreferrer"
       className="bg-[#c1b86a] content-stretch flex gap-[8px] items-center justify-center p-[16px] relative rounded-[16px] shrink-0 hover:bg-[#b0a75a] transition-colors cursor-pointer no-underline"
@@ -425,15 +428,16 @@ function Frame5() {
 
 function Frame3() {
   return (
-    <div className="backdrop-blur-[10px] bg-[rgba(251,247,237,0.8)] relative rounded-[32px] shrink-0 w-full">
-      <div className="overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex flex-col gap-[16px] items-start p-[24px] relative w-full">
-          <Tag2 />
-          <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Festa</p>
-          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[24px]">Chácara Descanso do Guerreiro</p>
-          <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[24px]">Av. Delfinópolis - Balneário atlântico</p>
-          <Frame5 />
-        </div>
+    <div className="backdrop-blur-[10px] bg-[rgba(251,247,237,0.8)] relative rounded-[32px] shrink-0 w-full overflow-hidden shadow-lg">
+      <div className="h-[200px] w-full overflow-hidden">
+        <img src={imgCasa} alt="Alaya Garden" className="w-full h-full object-cover" />
+      </div>
+      <div className="content-stretch flex flex-col gap-[16px] items-start p-[24px] relative w-full">
+        <Tag2 />
+        <p className="font-bold leading-[normal] relative shrink-0 text-[#273421] text-[32px] text-center whitespace-nowrap">Festa</p>
+        <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[24px]">Alaya Garden</p>
+        <p className="font-bold leading-[normal] relative shrink-0 text-[#386f1e] text-[18px]">Rua Lourenço Alves da Costa, 193</p>
+        <Frame5 />
       </div>
       <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-[32px]" />
     </div>
@@ -583,21 +587,21 @@ function Intro2() {
       "CALSCALE:GREGORIAN",
       "BEGIN:VEVENT",
       "UID:batizado-raul-2026",
-      "DTSTAMP:20260322T230000Z",
+      "DTSTAMP:20260401T230000Z",
       "DTSTART:20260412T120000Z",
-      "DTEND:20260412T140000Z",
+      "DTEND:20260412T143000Z",
       "SUMMARY:Batizado do Raul",
-      "DESCRIPTION:∙ Capela São Domingos Sávio: https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA\\n∙ Chácara Descanso do Guerreiro: https://maps.app.goo.gl/t5aE8XSPXP1SyHc28",
+      "DESCRIPTION:∙ Capela São Domingos Sávio: https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA\\n∙ Alaya Garden: https://maps.app.goo.gl/cwQKxWHmwTjTGvcn7",
       "LOCATION:Capela São Domingos Sávio",
       "END:VEVENT",
       "BEGIN:VEVENT",
       "UID:festa-raul-2026",
-      "DTSTAMP:20260322T230000Z",
-      "DTSTART:20260412T140000Z",
+      "DTSTAMP:20260401T230000Z",
+      "DTSTART:20260412T150000Z",
       "DTEND:20260413T020000Z",
       "SUMMARY:Aniversário do Raul - 1 Aninho",
-      "DESCRIPTION:∙ Capela São Domingos Sávio: https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA\\n∙ Chácara Descanso do Guerreiro: https://maps.app.goo.gl/t5aE8XSPXP1SyHc28",
-      "LOCATION:Chácara Descanso do Guerreiro",
+      "DESCRIPTION:∙ Capela São Domingos Sávio: https://maps.app.goo.gl/ZiiLGVu5Ep8GhTQbA\\n∙ Alaya Garden: https://maps.app.goo.gl/cwQKxWHmwTjTGvcn7",
+      "LOCATION:Alaya Garden",
       "END:VEVENT",
       "END:VCALENDAR"
     ].join("\r\n");
